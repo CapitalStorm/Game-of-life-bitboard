@@ -101,3 +101,20 @@ def neighbour_link(index):
     return neighbour
 
 neighbours = [neighbour_link(i) for i in range(16)]
+
+def display_board(board):
+    #function takes in a board and prints it in a readable format
+    for row in board:
+        disp = ""
+        for cell in row:
+            if cell == 1:
+                disp += "#"
+            else:
+                disp += "_"
+        print(disp)
+    return
+
+def clear_screen():
+    # Clear the console screen
+    print("\033[H\033[J", end="")
+    return
