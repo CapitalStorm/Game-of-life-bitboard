@@ -1,5 +1,5 @@
 #initializing this program to only run on 4x4 boards that compute the game of life
-from function import encode, decode, extract_neighbour, neighbour_adder, rule_circuit
+from python.function import encode, decode, extract_neighbour, neighbour_adder, rule_circuit
 #initialize a board with blinker as python list
 board = [
     [0,0,0,0],
